@@ -1,0 +1,32 @@
+# Project configuration
+project_name: AI-Predictive-Maintenance-System
+version: 1.0.0
+
+# Model parameters
+model:
+  sequence_length: 10
+  n_features: 3
+  lstm_units: 50
+  dropout_rate: 0.2
+
+# API configuration
+api:
+  host: 0.0.0.0
+  port: 8000
+  debug: false
+
+# Data configuration
+data:
+  input_path: data/sample_sensor_data.csv
+  preprocessed_path: data/preprocessed/
+  model_path: models/
+
+# Logging configuration
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Monitoring configuration
+monitoring:
+  prometheus_enabled: true
+  grafana_dashboard: true
