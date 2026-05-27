@@ -130,6 +130,8 @@ This project uses GitHub Actions for continuous integration. The workflow runs t
 
 If you find this project useful, please consider giving it a star! It helps others discover the project.
 
+*Last updated: $(date -u +"%Y-%m-%d %H:%M:%S UTC")*
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
