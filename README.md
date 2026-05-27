@@ -12,6 +12,7 @@ Advanced AI-powered predictive maintenance system with real-time sensor data pro
 - Dashboard for monitoring equipment health and predictions
 - Cloud-native deployment with Docker and Kubernetes
 - Comprehensive logging and monitoring
+- CI/CD with GitHub Actions (automated testing)
 
 ## System Architecture
 
@@ -25,7 +26,7 @@ Advanced AI-powered predictive maintenance system with real-time sensor data pro
                          +------------------+
                          |  ML Models       |
                          |  (LSTM, CNN,     |
-                         |   Random Forest)   |
+                         |   Random Forest) |
                          +------------------+
                                    |
                                    v
@@ -113,6 +114,12 @@ kubectl apply -f k8s/service.yaml
 - Structured logging with ELK stack integration
 - Grafana dashboards for visualization
 
+## CI/CD
+
+This project uses GitHub Actions for continuous integration. The workflow runs the test suite on every push to `main`.
+
+![CI](https://github.com/Muskan6376567236/AI-Predictive-Maintenance-System/actions/workflows/ci.yml/badge.svg)
+
 ## Contributing
 
 1. Fork the repository
@@ -120,6 +127,8 @@ kubectl apply -f k8s/service.yaml
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+If you find this project useful, please consider giving it a star! It helps others discover the project.
 
 ## License
 
